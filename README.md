@@ -1,4 +1,4 @@
-# EIP712 Android Library
+# Ethereum EIP712 for Android
 
 EIP712 Android Library is a Kotlin-based library designed to simplify the integration of the EIP712 standard into Android applications, enabling seamless signing and structured data handling for Ethereum transactions.
 
