@@ -20,16 +20,14 @@ class PrivateKeyEthSignerTest {
         @JvmStatic
         fun setUp() {
             val privateKey = Hash.sha3String("cow")
-
-            credentials = Credentials.create(privateKey)
-            key = PrivateKeyEthSigner(credentials)
-
+            
             domain = Eip712Domain(
                 "Ether Mail",
                 "1",
                 1L,
                 "0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC"
             )
+            key = PrivateKeyEthSigner(domain, privateKey)
 
             message = Mail()
         }
